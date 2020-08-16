@@ -25,3 +25,35 @@
     ```python
     python -m pip install --upgrade pip
     ```
+
+* Scrapy 구조
+  - Scrapy 폴더 구조 설명
+  - Stratproject
+
+    ```python
+    scrapy startproject section01_2
+    ```
+
+  - Runspider vs Crawl
+    - Runspider(단위 테스트)
+
+    ```python
+    scrapy runspider testspider.py
+    ```
+
+    - Crawl(운영)
+
+    ```python
+    scrapy crawl test1
+    ```
+
+  - Genspider
+
+    ```python
+    scrapy genspider testspider scrapinghub.com
+    ```
+
+  - 기본 값 출력 및 ```--nolog```
+    ```python
+    scrapy crawl test1 --nolog
+    ```
