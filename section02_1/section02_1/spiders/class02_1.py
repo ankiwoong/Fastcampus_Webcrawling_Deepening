@@ -19,6 +19,12 @@ class TestSpider(scrapy.Spider):
         # css
         # 출력 옵션
         # -o 파일명.확장자 , -t 파일 타입(json, jsonlines, jl, csv, xml, marshal, pickle)
-        for text in response.css("div.post-header h2 a::text").getall():
-            # Return Type : Request, BaseItem, dictionary, None
-            yield {"text": text}
+        # for text in response.css("div.post-header h2 a::text").getall():
+        # Return Type : Request, BaseItem, dictionary, None
+        # yield {"text": text}
+
+        # 예제 2(Xpath)
+        for i, text in enumerate(
+            response.xpath('//div[@class="post-header"]/h2/a/text()').getall()
+        ):
+            yield {"num": i, "text": text}
