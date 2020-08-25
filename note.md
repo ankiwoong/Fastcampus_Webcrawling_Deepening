@@ -57,3 +57,19 @@
     ```python
     scrapy crawl test1 --nolog
     ```
+
+* Scrapy 블로그 크롤링
+  * Scrapy - Request 이해
+  * CSS Selector
+  * XPath Selector
+  * 블로그 Title 수집
+
+  ```python
+  scrapy crawl test2 -o result.jl -t jsonlines
+  ```
+
+  * Scrapy 블로그 크롤링
+    * 페이지 링크 순회
+    * 링크 페이지 본문 수집
+    * 수집 데이터 다양한 파일 형식 저장
+    * Get / Getall / Extract / Extract_first
