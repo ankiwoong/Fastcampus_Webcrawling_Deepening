@@ -73,3 +73,62 @@
     * 링크 페이지 본문 수집
     * 수집 데이터 다양한 파일 형식 저장
     * Get / Getall / Extract / Extract_first
+
+* Scrapy Shell 활용하기
+  * Shell(쉘) 사용 장점
+  * 명령어 사용 실습
+  * 대상 데이터 수집 실습(CSS, Xpath)
+  * Fetch, View, response, request
+
+  ```python
+  scrapy shell
+
+  fetch('https://blog.scrapinghub.com')
+
+  response
+
+  response.body
+
+  response.text
+  ```
+
+  ```python
+  scrapy shell https://blog.scrapinghub.com
+  
+  response
+
+  fetch('https://www.naver.com')
+  
+  response.body
+
+  view(response)
+  ```
+
+  ```python
+  scrapy shell
+  
+  fetch('https://blog.scrapinghub.com')
+
+  response
+
+  response.url
+
+  response.body
+
+  response.css("div.post-item > div > a::attr('href')").getall()
+
+  response.css("div.post-item > div > a::attr('href')").get()
+
+  response.css("div.post-item > div > a::attr('href')").extract()
+
+  response.css("div.post-item > div > a::attr('href')").extract_first()
+
+  response.xpath('//div[@class="post-item"]/div/a/@href').getall()
+
+  response.headers
+
+  response.meta
+  ```
+
+  ```python
+  scrapy shell https://www.daum.net --set="ROBOTSTXT_OBEY=False"
