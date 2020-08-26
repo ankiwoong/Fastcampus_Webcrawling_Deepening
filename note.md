@@ -132,3 +132,8 @@
 
   ```python
   scrapy shell https://www.daum.net --set="ROBOTSTXT_OBEY=False"
+  ```
+
+  ```python
+  scrapy sehll https://www.daumn.net
+  ```
