@@ -137,3 +137,9 @@
   ```python
   scrapy sehll https://www.daumn.net
   ```
+
+* Scrapy Spider 활용하기
+  * Spider Attribute
+  * Multi Domain
+  * Logger
+  * Response 분기
