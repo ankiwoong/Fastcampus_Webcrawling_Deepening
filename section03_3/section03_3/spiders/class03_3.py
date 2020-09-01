@@ -36,5 +36,32 @@ class TestSpider(scrapy.Spider):
     # response.css('title::text').get() : 타이틀 태그의 텍스트만 추출
     # response.css('div > a::attr(href)').getall() : div 태그의 자식 a 태그 href 속성 값 전부 추출
 
+    # Xpath 선택자
+    # nodename : 이름이 nodename 선택
+    # text() : -> 노드 텍스트만 추출
+    # / : 루트부터 시작
+    # // : 현재 node 부터 문서상의 모든 노드 조회
+    # . : 현재 node
+    # .. : 현재 node의 부모 노드
+    # @ : 속성 선택자
+    # excract(), extract_first() 사용 숙지
+
+    # 예)
+    # response.xpath('//div') : 루트 노드부터 모든 div 태그 선택
+    # response.xpath('//div[@id="id1"]/a/text()').get() : div 태그 중 id가 'id1' 인 자식 a 태그의 텍스트 추출
+
+    # 중요
+    # get() == extract_first()
+    # getall() == extract()
+
+    # 혼합 사용 가능
+    # response.css('img').xpath('@src').getall()
+
+    # nav 메뉴 이름 크롤링 실습
+    # 쉘 실행 -> 선택자 확인 -> 코딩 -> 데이터 저장
     def parse(self, response):
-        pass
+        for n, text in enumerate(
+            response.css("nav#mySidenav > div a::text").getall(), 1
+        ):
+            yield {"num": n, "learn title": text}
+
