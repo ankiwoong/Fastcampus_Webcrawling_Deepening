@@ -143,3 +143,9 @@
   * Multi Domain
   * Logger
   * Response 분기
+
+* Scrapy Selector 사용
+  * xpath Selector
+  * css Selector
+  * W3School 크롤링 연습
+  * Selectors function 비교 설명
