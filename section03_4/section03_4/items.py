@@ -6,7 +6,7 @@
 import scrapy
 
 
-class Setion034Item(scrapy.Item):
+class Section034Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

@@ -9,7 +9,7 @@ from scrapy import signals
 from itemadapter import is_item, ItemAdapter
 
 
-class Setion034SpiderMiddleware:
+class Section034SpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -56,7 +56,7 @@ class Setion034SpiderMiddleware:
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class Setion034DownloaderMiddleware:
+class Section034DownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
