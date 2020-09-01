@@ -149,3 +149,9 @@
   * css Selector
   * W3School 크롤링 연습
   * Selectors function 비교 설명
+
+* Scrapy Item 설명 및 크롤링
+  * Scrapy Items 사용 이유
+  * IT News 사이트 크롤링 연습
+  * 메인 페이지 > 상세 페이지 크롤링
+  * Item 선언 및 수집 데이터 맵핑
