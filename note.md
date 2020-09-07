@@ -161,3 +161,9 @@
   * command 명령어 파일 저장
   * settings.py 설정 파일 저장
   * Feed_Export 관련 옵션 설명
+
+* Scrapy Setting 설명 및 설정
+  * settings.py - 다양한 설정 방법
+  * 각 설정 항목 상세 설명
+  * News 사이트 크로링 연습
+  * 기타 항목(캐시, 미들웨어)
