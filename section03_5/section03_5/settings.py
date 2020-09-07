@@ -86,3 +86,19 @@ DOWNLOAD_DELAY = 2
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# 출력(Export) 설정
+# 파일 이름 및 경로
+FEED_URL = "result.json"
+
+# 파일 형식
+FEED_FORMAT = "json"
+
+# 출력 인코딩
+FEED_EXPORT_ENCODING = "utf-8"
+
+# 기본 들여쓰기
+FEED_EXPORT_INDENT = 2
+
+# 저장소, 저장형식 관련 세팅은 레퍼런스 참조
+# https://docs.scrapy.org/en/latest/topics/feed-exports.html#feed-storages
